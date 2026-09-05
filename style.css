@@ -13,12 +13,30 @@ body{
     align-items: center;
 }
 
+.youtube-container{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
 .youtube-logo{
     font-size: 40px;
+    color: rgb(255, 0, 0);
+}
+
+.youtube-text {
+  color: rgb(0, 0, 0);
+  font-family: sans-serif;
+  font-weight: bold;
 }
 
 .search-bar{
     border-radius: 8px;
+}
+
+.perfil-usuario{
+    height: 40px;
+    border-radius: 100px;
 }
 
 .video-box{
