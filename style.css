@@ -227,9 +227,28 @@ body{
     height: 30px;
 }
 
+/*Classes do Shorts*/
+
+/*Classes do Inscrição*/
+
+/*Classes do Histórico*/
+
+/*Classes do Conta*/
+.main-conta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perfil-conta{
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+}
+
+/*Classes do Configurações*/
+
 /*Classe do sair*/
 .leave{
     background-color: black;
 }
-
-/*Classes do Shorts*/
