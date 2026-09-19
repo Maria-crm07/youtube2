@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Youtube2</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
@@ -18,38 +18,195 @@
     <header class="head">
       <button id="btn.menu"><i class="fa-solid fa-bars"></i></button>
       <div class="youtube-container">
-      <i class="fa-brands fa-youtube youtube-logo"></i>
-      <span class="youtube-text">Youtube2</span>
+        <i class="fa-brands fa-youtube youtube-logo"></i>
+        <span class="youtube-text">Youtube2</span>
       </div>
-      <input class="search-bar" type="text" />
-      <img class="perfil-usuario" src="imagens/perfil-homemaranha.jpg" alt="logo usuario" />
+      <div class="youtube-bar">
+        <input class="search-bar" type="text" />
+        <button class="search-button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <div class="dropdown">
+        <img class="dropbtn" onclick="myFunction()" src="imagens/perfil-homemaranha.jpg" alt="logo usuario"/>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#"><i class="fa-solid fa-user"></i>Conta</a>
+          <a href="#"><i class="fa-solid fa-gear"></i>Configurações</a>
+          <a href="leave.html"><i class="fa-solid fa-right-from-bracket"></i>Sair</a>
+        </div>
+      </div>
+
     </header>
 
     <div class="main">
       <div class="video-box">
-        <img src="imagens/homemaranha.avif" alt="img-video" class="img-video" />
-        <p class="video-title">Trailer do Homem Aranha: Sem volta pra casa Dublado em Português</p>
+        <a href="https://www.youtube.com/watch?v=PlulyWs1kS4"
+          ><img
+            src="imagens/homemaranha.avif"
+            alt="img-video"
+            class="img-video"
+        /></a>
+        <p class="video-title">
+          Trailer Homem Aranha: Sem volta pra casa em Português
+        </p>
         <div class="video-user">
           <div class="user">
-            <img src="imagens/usuario.avif" alt="img-usuario" />
+            <img
+              class="perfil-usuario"
+              src="imagens/canal-marvel.jpg"
+              alt="img-usuario"
+            />
             <div class="user-description">
-              <p class="user-name">Marvel Entertainment</p>
+              <p class="user-name">
+                Marvel Entertainment <i class="fa-solid fa-check check"></i>
+              </p>
               <p class="user-subs">23,7 mi de inscritos</p>
             </div>
           </div>
           <button class="subscribe">inscreva-se</button>
         </div>
       </div>
+
+      <div class="video-box">
+        <a href="https://www.youtube.com/watch?v=drMArcyv9qs"
+          ><img
+            src="imagens/duende-verde.jpg"
+            alt="img-video"
+            class="img-video"
+        /></a>
+        <p class="video-title">Luta Homem Aranha e Duende Verde</p>
+        <div class="video-user">
+          <div class="user">
+            <img
+              class="perfil-usuario"
+              src="imagens/usuario.avif"
+              alt="img-usuario"
+            />
+            <div class="user-description">
+              <p class="user-name">Cortes de Filmes</p>
+              <p class="user-subs">553 mil inscritos</p>
+            </div>
+          </div>
+          <button class="subscribe">inscreva-se</button>
+        </div>
+      </div>
+
+      <div class="video-box">
+        <a href="https://www.youtube.com/watch?v=U9R09R2Q2bM"
+          ><img
+            src="imagens/championsval.jpg"
+            alt="img-video"
+            class="img-video"
+        /></a>
+        <p class="video-title">Explicação do formato VALORANT Shangai</p>
+        <div class="video-user">
+          <div class="user">
+            <img
+              class="perfil-usuario"
+              src="imagens/canal-valorant.jpg"
+              alt="img-usuario"
+            />
+            <div class="user-description">
+              <p class="user-name">
+                Valorant Esports BR <i class="fa-solid fa-check check"></i>
+              </p>
+              <p class="user-subs">357 mil inscritos</p>
+            </div>
+          </div>
+          <button class="subscribe">inscreva-se</button>
+        </div>
+      </div>
+
+      <div class="video-box">
+        <a
+          href="https://www.youtube.com/watch?v=5FrhtahQiRc&list=RD5FrhtahQiRc&start_radio=1"
+          ><img src="imagens/hevycrown.avif" alt="img-video" class="img-video"
+        /></a>
+        <p class="video-title">Heavy Is The Crown ft. Linkin Park</p>
+        <div class="video-user">
+          <div class="user">
+            <img
+              class="perfil-usuario"
+              src="imagens/linkinpark.jpg"
+              alt="img-usuario"
+            />
+            <div class="user-description">
+              <p class="user-name">
+                Linkin Park <i class="fa-solid fa-check check"></i>
+              </p>
+              <p class="user-subs">25,3 mi de inscritos</p>
+            </div>
+          </div>
+          <button class="subscribe">inscreva-se</button>
+        </div>
+      </div>
+
+      <div class="video-box">
+        <a href="https://www.youtube.com/watch?v=drMArcyv9qs"
+          ><img
+            src="imagens/duende-verde.jpg"
+            alt="img-video"
+            class="img-video"
+        /></a>
+        <p class="video-title">Luta Homem Aranha e Duende Verde</p>
+        <div class="video-user">
+          <div class="user">
+            <img
+              class="perfil-usuario"
+              src="imagens/usuario.avif"
+              alt="img-usuario"
+            />
+            <div class="user-description">
+              <p class="user-name">Cortes de Filmes</p>
+              <p class="user-subs">553 mil inscritos</p>
+            </div>
+          </div>
+          <button class="subscribe">inscreva-se</button>
+        </div>
+      </div>
+
+      <div class="video-box">
+        <a href="https://www.youtube.com/watch?v=drMArcyv9qs"
+          ><img
+            src="imagens/duende-verde.jpg"
+            alt="img-video"
+            class="img-video"
+        /></a>
+        <p class="video-title">Luta Homem Aranha e Duende Verde</p>
+        <div class="video-user">
+          <div class="user">
+            <img
+              class="perfil-usuario"
+              src="imagens/usuario.avif"
+              alt="img-usuario"
+            />
+            <div class="user-description">
+              <p class="user-name">Cortes de Filmes</p>
+              <p class="user-subs">553 mil inscritos</p>
+            </div>
+          </div>
+          <button class="subscribe">inscreva-se</button>
+        </div>
+      </div>
+      
     </div>
 
     <div class="overlay" id="overlay"></div>
     <aside class="menu" id="menu">
       <div class="menu-header">
         <p>Menu</p>
-        <button class="btn-close" id="btn.close"><i class="fa-solid fa-x"></i></button>
+        <button class="btn-close" id="btn.close">
+          <i class="fa-solid fa-x"></i>
+        </button>
       </div>
-      <button><i class="fa-solid fa-house"></i>Home Page</button>
-      <button><i class="fa-brands fa-youtube-shorts"></i>Shorts</button>
+      <div class="menu-buttons">
+        <button><i class="fa-solid fa-house"></i>Início</button>
+        <button><i class="fa-brands fa-youtube-shorts"></i>Shorts</button>
+        <button><i class="fa-solid fa-inbox"></i>Inscrições</button>
+        <button><i class="fa-solid fa-clock-rotate-left"></i>Histórico</button>
+      </div>
     </aside>
+    <script src="script.js" ></script>
   </body>
 </html>

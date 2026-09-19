@@ -5,12 +5,18 @@ body{
 .head{
     position: sticky;
     top: 0;
-    background-color: rgb(170, 170, 170);
+    background-color: rgb(0, 0, 0);
     height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.555);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .youtube-container{
@@ -25,12 +31,22 @@ body{
 }
 
 .youtube-text {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-family: sans-serif;
   font-weight: bold;
 }
 
+.youtube-bar{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
 .search-bar{
+    border-radius: 8px;
+}
+
+.search-button{
     border-radius: 8px;
 }
 
@@ -39,12 +55,61 @@ body{
     border-radius: 100px;
 }
 
+.dropbtn{
+    height: 40px;
+    border-radius: 100px;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #ffffff;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  right: 40px;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+.main{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    padding-left: 10px;
+    gap: 20px;
+}
+
 .video-box{
-    width: 450px;
+    width: 420px;
 }
 
 .img-video{
-    width: 450px;
+    width: 420px;
     border-radius: 10px;
 }
 
@@ -77,11 +142,17 @@ body{
 .user-name{
     font-size: 14px;
     margin: 0;
+    color: rgb(53, 53, 53);
 }
 
 .user-subs{
     font-size: 12px;
     margin: 0;
+    color: rgb(73, 73, 73);
+}
+
+.check{
+    font-size: 10px;
 }
 
 .subscribe{
@@ -117,6 +188,11 @@ body{
     background: #fff;
 }
 
+.menu-buttons{
+    display: flex;
+    flex-direction: column;
+}
+
 .menu.aberto{
     transform: translateX(0);
 }
@@ -130,4 +206,9 @@ body{
 .btn-close{
     width: 50px;
     height: 30px;
+}
+
+/*Classe do sair*/
+.leave{
+    background-color: black;
 }
