@@ -142,13 +142,13 @@ body{
 .user-name{
     font-size: 14px;
     margin: 0;
-    color: rgb(53, 53, 53);
+    color: rgb(172, 172, 178);
 }
 
 .user-subs{
     font-size: 12px;
     margin: 0;
-    color: rgb(73, 73, 73);
+    color: rgb(172, 172, 178);
 }
 
 .check{
@@ -203,6 +203,25 @@ body{
     justify-content: space-between;
 }
 
+.menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #e0e0e0; /* Cor de fundo cinza parecida com o botão padrão */
+  color: #000000;             /* Cor do texto preta */
+  text-decoration: none;      /* Remove o sublinhado do link */
+  border: 1px solid #767676;  /* Borda similar à do botão */
+  border-radius: 2px;
+  cursor: pointer;
+  margin-bottom: 2px;
+}
+
+/* Efeito ao passar o mouse por cima */
+.menu-btn:hover {
+  background-color: #d0d0d0;
+}
+
 .btn-close{
     width: 50px;
     height: 30px;
@@ -212,3 +231,5 @@ body{
 .leave{
     background-color: black;
 }
+
+/*Classes do Shorts*/
