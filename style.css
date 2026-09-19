@@ -228,6 +228,65 @@ body{
 }
 
 /*Classes do Shorts*/
+.main-shorts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+    margin-right: 300px;
+}
+
+.video-box-shorts{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.img-video-shorts{
+    height: 680px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.video-description{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.user-name-shorts{
+    font-weight: bold;
+    margin: 0;
+}
+
+.user-subs-shorts{
+    font-size: 0.85rem;
+    color: #606060;
+    margin: 0;
+}
+
+.shorts-buttons{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 5px;
+}
+
+.shorts-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #e0e0e0; /* Cor de fundo cinza parecida com o botão padrão */
+    color: #000000;             /* Cor do texto preta */
+    text-decoration: none;      /* Remove o sublinhado do link */
+    border: 1px solid #767676;  /* Borda similar à do botão */
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
 
 /*Classes do Inscrição*/
 
